@@ -1,6 +1,6 @@
 import {IInputs, IOutputs} from "./generated/ManifestTypes";
 
-export class BootstrapOptions implements ComponentFramework.StandardControl<IInputs, IOutputs> {
+export class BootstrapGlyphStyles implements ComponentFramework.StandardControl<IInputs, IOutputs> {
 private _context: ComponentFramework.Context<IInputs>;
 	private notifyOutputChanged: () => void;
 	private _container: HTMLDivElement;
@@ -33,7 +33,7 @@ private _context: ComponentFramework.Context<IInputs>;
         this._currentVal = context.parameters.sampleProperty.raw;
         
         this._button = document.createElement("button");
-        this._button.className = "btn btn-info btn-lg btn-block";
+        this._button.className = "btn btn-success btn-lg";
         this._button.textContent = this._currentVal ? "Yes" : "No";
         this._button.onclick = () => {
             this._currentVal = !this._currentVal;
@@ -58,7 +58,12 @@ private _context: ComponentFramework.Context<IInputs>;
         if (context.parameters.sampleProperty.raw != this._currentVal) {
 			this._currentVal = context.parameters.sampleProperty.raw;
     		this._button.textContent = this._currentVal ? "Yes" : "No";
-		}
+        }
+         if (this._button.textContent == "Yes") {
+             this._button.innerHTML = ` <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>`;
+         } else {
+              this._button.innerHTML = ` <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>`;
+         }
     }
 
     /**

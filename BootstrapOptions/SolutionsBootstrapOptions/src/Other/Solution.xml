@@ -13,21 +13,21 @@
     <Managed>2</Managed>
     <Publisher>
       <!-- Unique Publisher Name of Cds Solution -->
-      <UniqueName>EWCrmControls</UniqueName>
+      <UniqueName>ElevateWiseGlyphButton</UniqueName>
       <LocalizedNames>
         <!-- Localized Cds Publisher Name in language code-->
-        <LocalizedName description="EWCrmControls" languagecode="1033" />
+        <LocalizedName description="ElevateWiseGlyphButton" languagecode="1033" />
       </LocalizedNames>
       <Descriptions>
         <!-- Description of Cds Publisher in language code -->
-        <Description description="EWCrmControls" languagecode="1033" />
+        <Description description="ElevateWiseGlyphButton" languagecode="1033" />
       </Descriptions>
       <EMailAddress xsi:nil="true"></EMailAddress>
       <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
       <!-- Customization Prefix for the Cds Publisher-->
-      <CustomizationPrefix>ewcrm</CustomizationPrefix>
+      <CustomizationPrefix>ewglyps</CustomizationPrefix>
       <!-- Derived Option Value Prefix for the Customization Prefix of Cds Publisher -->
-      <CustomizationOptionValuePrefix>87230</CustomizationOptionValuePrefix>
+      <CustomizationOptionValuePrefix>62003</CustomizationOptionValuePrefix>
       <Addresses>
         <!-- Address of the Publisher-->
         <Address>
